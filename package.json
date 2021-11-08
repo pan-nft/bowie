@@ -27,6 +27,9 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "@ethersproject/abi": "^5.5.0",
+    "@ethersproject/bytes": "^5.5.0",
+    "@ethersproject/providers": "^5.5.0",
     "commander": "^2.20.0",
     "ethers": "^5.5.1"
   }

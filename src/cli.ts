@@ -22,6 +22,11 @@ downloadImage({
   rpcUrl: program.url,
   fileName: program.filename,
   contractAddress: program.contract,
-}).then(result => {
- 
 })
+  .then(result => {
+  
+  })
+  .catch(err => {
+    console.error(err.toString())
+    process.exit(1)
+  })
