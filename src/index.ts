@@ -100,11 +100,8 @@ export const downloadImage = async (config: DownloadConfig): Promise<boolean> =>
 
   const image = decodeFile(imageData, fileSize)
 
-  const writeStream = fs.createWriteStream(filepath)
+  fs.writeFileSync(filepath, image)
 
-  writeStream.write(image)
-  writeStream.end()
-  
   console.error(`written image to ${config.fileName}`)
 
   return true
