@@ -9,7 +9,9 @@
   ],
   "license": "MIT",
   "main": "./dist/index.js",
-  "bin": "./dist/cli.js",
+  "bin": {
+    "pan-nft-bowie": "./dist/cli.js"
+  },
   "files": [
     "dist/**/*",
     "!dist/**/*.test.js"
